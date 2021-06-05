@@ -1,7 +1,19 @@
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomeScreen from './screens/HomeScreen';
+import "./bootstrap.min.css";
+import { Container } from 'react-bootstrap';
+
 function App() {
   return (
     <>
-      <h1>Lorem ipsum dolor sit amet</h1>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <HomeScreen></HomeScreen>
+        </Container>
+      </main>
+      <Footer />
     </>
   );
 }
