@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Rating = ({ value, numberOfReviews, color }) => {
+const Rating = ({ value, text, color }) => {
     return (
         <div className="rating">
             <span>
@@ -10,6 +10,7 @@ const Rating = ({ value, numberOfReviews, color }) => {
                 <i style={{ color }} className={value >= 4 ? 'fas fa-star' : value >= 3.5 ? 'fas fa-star-half-alt' : 'far fa-star'}></i>
                 <i style={{ color }} className={value >= 5 ? 'fas fa-star' : value >= 4.5 ? 'fas fa-star-half-alt' : 'far fa-star'}></i>
             </span>
+            <span className="ml-2">{ text && text }</span>
         </div>
     )
 }
