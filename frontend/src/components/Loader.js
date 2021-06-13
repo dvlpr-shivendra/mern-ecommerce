@@ -6,7 +6,7 @@ function Loader() {
         <Spinner animation="border"
             role="status"
             style={{
-                width: '100px',
+                padding: '50px',
                 margin: 'auto',
                 display: 'block',
             }}
